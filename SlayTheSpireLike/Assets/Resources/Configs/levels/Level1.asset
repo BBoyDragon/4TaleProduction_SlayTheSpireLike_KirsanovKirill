@@ -20,4 +20,4 @@ MonoBehaviour:
   - spawnPoint: {fileID: 8679352904192473783, guid: 205197f13d3d3a84db13b2da86e46b61, type: 3}
     enemyModelData: {fileID: 11400000, guid: 790110d741d51c146b74d59b8237d3ff, type: 2}
   - spawnPoint: {fileID: 2997234127819195430, guid: 37a1a35edaf64cf43a0b6c4de640f9dd, type: 3}
-    enemyModelData: {fileID: 11400000, guid: 790110d741d51c146b74d59b8237d3ff, type: 2}
+    enemyModelData: {fileID: 11400000, guid: 0890e92cf9e844e4790a6adce09160fa, type: 2}

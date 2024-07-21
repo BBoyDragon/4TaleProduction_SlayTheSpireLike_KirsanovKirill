@@ -14,6 +14,7 @@ namespace Code.Views
         [SerializeField] private SpriteRenderer _spriteRenderer;
         [SerializeField] private SortingGroup _sortingGroup;
         [SerializeField] private GameObject _fire;
+        [SerializeField] private TMP_Text _energy;
         
         private Vector3 originalScale;
         private Vector3 originalPosition;
@@ -31,8 +32,10 @@ namespace Code.Views
         public TMP_Text Description => _Description;
 
         public SpriteRenderer SpriteRenderer1 => _spriteRenderer;
-        
-        
+
+        public TMP_Text Energy => _energy;
+
+
         void Start()
         {
             originalScale = transform.localScale;

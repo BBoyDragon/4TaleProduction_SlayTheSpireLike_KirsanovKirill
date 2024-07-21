@@ -15,6 +15,7 @@ namespace Code.Configs.CardSystemData
         [SerializeField] private string _name;
         [SerializeField] private string _description;
         [SerializeField] private Sprite _sprite;
+        [SerializeField] private int _enegryCost;
         [Serializable]
         public struct ScenarioAction
         {
@@ -26,7 +27,7 @@ namespace Code.Configs.CardSystemData
 
         public CardModel Create()
         {
-            CardModel cardModel = new CardModel(_cardView, _name, _description, _sprite);
+            CardModel cardModel = new CardModel(_cardView, _name, _description, _sprite, _enegryCost);
             _scenarioActions.ForEach(scenarioAction =>
                 cardModel.AddAction(scenarioAction.scenario, scenarioAction.action.Create()));
             return cardModel;

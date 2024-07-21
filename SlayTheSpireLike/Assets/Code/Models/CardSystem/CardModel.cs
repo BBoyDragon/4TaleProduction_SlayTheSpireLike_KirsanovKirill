@@ -12,18 +12,20 @@ namespace Code.Models.CardSystem
         private CardView _cardView;
         private string _name;
         private string _description;
+        private int _energyCost;
         private Sprite _sprite;
 
         private CardView _viewPrefab;
 
         public event Action<CardModel> OnCardWasPicked;
 
-        public CardModel(CardView cardView, string name, string description, Sprite sprite)
+        public CardModel(CardView cardView, string name, string description, Sprite sprite, int energyCost)
         {
             _viewPrefab = cardView;
             _name = name;
             _description = description;
             _sprite = sprite;
+            _energyCost = energyCost;
             _scenarioActions = new Dictionary<CardPalyingScenario, List<ICardAction>>();
         }
 
@@ -38,6 +40,7 @@ namespace Code.Models.CardSystem
             _cardView.Name.text = _name;
             _cardView.SpriteRenderer1.sprite = _sprite;
             _cardView.Description.text = _description;
+            _cardView.Energy.text = _energyCost.ToString();
             _cardView.OnCardWasClicked += Peek;
         }
         
@@ -45,6 +48,8 @@ namespace Code.Models.CardSystem
         public Dictionary<CardPalyingScenario, List<ICardAction>> ScenarioActions => _scenarioActions;
 
         public CardView View => _cardView;
+
+        public int EnergyCost => _energyCost;
 
         public void AddAction(CardPalyingScenario scenario, ICardAction action)
         {

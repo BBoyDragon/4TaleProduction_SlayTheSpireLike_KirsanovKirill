@@ -17,6 +17,7 @@ MonoBehaviour:
   _description: "\u041B\u0435\u0447\u0438\u0442 \u0432\u044B\u0431\u0440\u0430\u043D\u043D\u0443\u044E
     \u0446\u0435\u043B\u044C \u043D\u0430 15"
   _sprite: {fileID: 21300000, guid: 02800fb9cff14da47a04572790384d8b, type: 3}
+  _enegryCost: 2
   _scenarioActions:
   - scenario: 0
     action: {fileID: 11400000, guid: e5e38e06d4d48de4a8648f7c194ba045, type: 2}

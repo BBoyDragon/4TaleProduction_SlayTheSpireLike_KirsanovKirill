@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f14ef605d60248b2a846c9a87e0fb0a8, type: 3}
-  m_Name: PlayerData
+  m_Script: {fileID: 11500000, guid: e0fbd59ab80048a7a7b144d826f7cdcc, type: 3}
+  m_Name: ArcherDamage
   m_EditorClassIdentifier: 
-  playerView: {fileID: 5200946494431526108, guid: 24a8457672c431d40bb82466289add62, type: 3}
-  _maxHealth: 100
+  _damage: 25

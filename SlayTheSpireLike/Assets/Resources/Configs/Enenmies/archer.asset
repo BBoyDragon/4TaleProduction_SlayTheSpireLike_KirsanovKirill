@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f14ef605d60248b2a846c9a87e0fb0a8, type: 3}
-  m_Name: PlayerData
+  m_Script: {fileID: 11500000, guid: fc8112fa7d7d46f68babffbf8d496a9c, type: 3}
+  m_Name: archer
   m_EditorClassIdentifier: 
-  playerView: {fileID: 5200946494431526108, guid: 24a8457672c431d40bb82466289add62, type: 3}
-  _maxHealth: 100
+  enemyView: {fileID: 4910327701453285004, guid: dc643cb8f16a19f4f83db8b7682f5bd6, type: 3}
+  cardFactories:
+  - {fileID: 11400000, guid: 5a0b062d5b49d6448a628da47bf95b02, type: 2}
+  _maxHp: 25
