@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc8112fa7d7d46f68babffbf8d496a9c, type: 3}
+  m_Name: archer
+  m_EditorClassIdentifier: 
+  enemyView: {fileID: 4910327701453285004, guid: dc643cb8f16a19f4f83db8b7682f5bd6, type: 3}
+  cardFactories:
+  - {fileID: 11400000, guid: 5a0b062d5b49d6448a628da47bf95b02, type: 2}
+  _maxHp: 25
