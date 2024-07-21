@@ -17,11 +17,13 @@ namespace Code.Models.CardSystem.DeckSystem
         public int Size() => _cards.Count;
         public CardModel Draw()
         {
+            _deckView.SetDeckView(_cards.Count-1);
             return _cards.Dequeue();
         }
         public void Add(CardModel cardModel)
         {
             _cards.Enqueue(cardModel);
+            _deckView.SetDeckView(_cards.Count);
         }
 
         public void Shufle()
